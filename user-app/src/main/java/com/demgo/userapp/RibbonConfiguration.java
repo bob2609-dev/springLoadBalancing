@@ -15,12 +15,14 @@ public class RibbonConfiguration {
     {
         return new PingUrl();
     }
+/*
 
     @Bean
     public IRule rule(IClientConfig ribbonClient)
     {
         return new AvailabilityFilteringRule();
     }
+*/
 
 
 

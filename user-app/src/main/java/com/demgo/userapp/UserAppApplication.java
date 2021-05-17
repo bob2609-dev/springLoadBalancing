@@ -7,11 +7,13 @@ import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.cloud.netflix.ribbon.RibbonClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 @RestController
 @RibbonClient(name = "chatbook", configuration = RibbonConfiguration.class)
 @SpringBootApplication
+@RequestMapping("/")
 public class UserAppApplication {
 
     public static void main(String[] args)
