@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: chatbook
+
+chatbook:
+  ribbon:
+    eureka:
+      enabled: false
+    listOfServers: localhost:8381,localhost:8382,localhost:8383
+    ServerListRefreshInterval: 2000
+
+server:
+  port: 9090
